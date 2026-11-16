@@ -9,22 +9,3 @@ PROXYIP = "104.18.35.115"
 # For sensitive values, prefer `wrangler secret put` over [vars]:
 #   wrangler secret put UUID
 #   wrangler secret put PROXYIP
-
-[triggers]
-crons = ["*/3 * * * *"]
-
-[observability]
-enabled = true
-head_sampling_rate = 1
-
-[observability.logs]
-enabled = true
-head_sampling_rate = 1
-persist = true
-invocation_logs = true
-
-[observability.traces]
-enabled = true
-persist = true
-head_sampling_rate = 1
-
